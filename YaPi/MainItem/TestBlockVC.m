@@ -22,12 +22,12 @@
 
 - (void)initView
 {
-    self.tabBarController.tabBar.hidden = YES;
     UIButton *bottomButton = [[UIButton alloc] initWithFrame:CGRectMake((SCREEN_WIDTH - 100)/2, SCREEN_HEIGHT/2 , 100*UIRate, 50*UIRate)];
     bottomButton.backgroundColor = UIColorFromRGB(0x3caafa);
     [bottomButton setTitle:@"返回" forState:UIControlStateNormal];
     [bottomButton addTarget:self action:@selector(bottomButtonAction) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:bottomButton];
+    self.tabBarController.tabBar.hidden = YES;
 
 }
 
