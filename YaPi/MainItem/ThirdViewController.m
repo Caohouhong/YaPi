@@ -7,6 +7,7 @@
 //
 
 #import "ThirdViewController.h"
+#import "PlayViewController.h"
 
 @interface ThirdViewController ()
 
@@ -29,7 +30,21 @@
    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT - self.navigationController.navigationBar.frame.size.height)];
     imageView.image = [UIImage imageNamed:@"man1"];
     [self.view addSubview:imageView];
+    
+    UIButton *button = [[UIButton alloc ] initWithFrame:CGRectMake(SCREEN_WIDTH/2 - 100*UIRate/2, SCREEN_HEIGHT - 100*UIRate, 100*UIRate, 50*UIRate)];
+    button.backgroundColor = UIColorFromRGB(0x3caafa);
+    button.layer.cornerRadius = 5;
+    button.titleLabel.font = IOS7_Font(15*UIRate);
+    [button setTitle:@"前往动画" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(buttonAction) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+}
 
+- (void)buttonAction
+{
+    PlayViewController *playVC = [[PlayViewController alloc] init];
+    playVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:playVC animated:YES];
 }
 
 @end

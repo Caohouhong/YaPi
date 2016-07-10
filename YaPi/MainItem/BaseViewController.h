@@ -10,4 +10,7 @@
 
 @interface BaseViewController : UIViewController
 
+/**设置title***/
+- (void)initTitle:(NSString *)title;
+
 @end

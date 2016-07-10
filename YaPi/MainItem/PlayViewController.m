@@ -1,22 +1,22 @@
 //
-//  BaseViewController.m
+//  PlayViewController.m
 //  YaPi
 //
 //  Created by 曹后红 on 16/7/10.
 //  Copyright © 2016年 apple. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "PlayViewController.h"
 
-@interface BaseViewController ()
+@interface PlayViewController ()
 
 @end
 
-@implementation BaseViewController
+@implementation PlayViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self baseAction];
+    [self initView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,13 +24,9 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)baseAction
+- (void)initView
 {
+    [self initTitle:@"动画"];
     self.view.backgroundColor = [UIColor whiteColor];
-}
-
-- (void)initTitle:(NSString *)title
-{
-    self.navigationItem.title = title;
 }
 @end

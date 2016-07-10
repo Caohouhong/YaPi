@@ -28,6 +28,10 @@
     [super didReceiveMemoryWarning];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:YES];
+}
 - (void)initView
 {
     self.navigationItem.title = @"鸭屁屁";

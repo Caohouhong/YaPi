@@ -10,7 +10,6 @@
 #import "BaseViewController.h"
 typedef void (^Block)(int);
 
-@interface TestBlockVC : UIViewController
+@interface TestBlockVC : BaseViewController
 @property (nonatomic, copy) Block backBlock;
-@property (nonatomic, strong) BaseViewController *baseVC;
 @end
