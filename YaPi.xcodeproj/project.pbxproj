@@ -18,6 +18,7 @@
 		0D8366ED1D2428EB00BB89A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D8366EB1D2428EB00BB89A6 /* LaunchScreen.storyboard */; };
 		0D8366F81D2428EB00BB89A6 /* YaPiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8366F71D2428EB00BB89A6 /* YaPiTests.m */; };
 		0D8367031D2428EB00BB89A6 /* YaPiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8367021D2428EB00BB89A6 /* YaPiUITests.m */; };
+		0D99DC571D3228D20095838B /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D99DC561D3228D20095838B /* BaseViewController.m */; };
 		0DD130D41D2D5F52000C399F /* tabbar_icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD130D01D2D5F52000C399F /* tabbar_icon1.png */; };
 		0DD130D51D2D5F52000C399F /* tabbar_icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD130D11D2D5F52000C399F /* tabbar_icon2.png */; };
 		0DD130D61D2D5F52000C399F /* tabbar_icon3.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD130D21D2D5F52000C399F /* tabbar_icon3.png */; };
@@ -69,6 +70,8 @@
 		0D8366FE1D2428EB00BB89A6 /* YaPiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YaPiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D8367021D2428EB00BB89A6 /* YaPiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YaPiUITests.m; sourceTree = "<group>"; };
 		0D8367041D2428EB00BB89A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D99DC551D3228D20095838B /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		0D99DC561D3228D20095838B /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		0DD130D01D2D5F52000C399F /* tabbar_icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar_icon1.png; sourceTree = "<group>"; };
 		0DD130D11D2D5F52000C399F /* tabbar_icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar_icon2.png; sourceTree = "<group>"; };
 		0DD130D21D2D5F52000C399F /* tabbar_icon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar_icon3.png; sourceTree = "<group>"; };
@@ -147,6 +150,8 @@
 				0DD130E11D2D6992000C399F /* FifthViewController.m */,
 				0D705E8D1D2BB5D3000D5C86 /* TestBlockVC.h */,
 				0D705E8E1D2BB5D3000D5C86 /* TestBlockVC.m */,
+				0D99DC551D3228D20095838B /* BaseViewController.h */,
+				0D99DC561D3228D20095838B /* BaseViewController.m */,
 			);
 			path = MainItem;
 			sourceTree = "<group>";
@@ -368,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DD130E21D2D6992000C399F /* FifthViewController.m in Sources */,
+				0D99DC571D3228D20095838B /* BaseViewController.m in Sources */,
 				0D705E8F1D2BB5D3000D5C86 /* TestBlockVC.m in Sources */,
 				0DF791721D28EAB500EF3D82 /* SecondViewController.m in Sources */,
 				0DD130DC1D2D68E3000C399F /* ThirdViewController.m in Sources */,

@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 typedef void (^Block)(int);
 
 @interface TestBlockVC : UIViewController
 @property (nonatomic, copy) Block backBlock;
+@property (nonatomic, strong) BaseViewController *baseVC;
 @end
